@@ -1,0 +1,251 @@
+{
+  "groups":[
+    {
+      "id": "absolute-beginners",
+      "label": "Absolute Beginners",
+      "roadmaps": [
+        { "id": "frontend-beginner", "title": "Frontend Beginner" },
+        { "id": "backend-beginner", "title": "Backend Beginner" },
+        { "id": "devops-beginner", "title": "DevOps Beginner" }
+      ]
+    },
+    {
+      "id": "web-development",
+      "label": "Web Development",
+      "roadmaps": [
+        { "id": "frontend", "title": "Frontend" },
+        { "id": "backend", "title": "Backend" },
+        { "id": "fullstack", "title": "Full Stack" },
+        { "id": "api-design", "title": "API Design" }
+      ]
+    },
+    {
+      "id": "frameworks",
+      "label": "Frameworks",
+      "roadmaps": [
+        { "id": "react", "title": "React" },
+        { "id": "vue", "title": "Vue" },
+        { "id": "angular", "title": "Angular" },
+        { "id": "spring-boot", "title": "Spring Boot" }
+      ]
+    },
+    {
+      "id": "languages-platforms",
+      "label": "Languages / Platforms",
+      "roadmaps": [
+        { "id": "javascript", "title": "JavaScript" },
+        { "id": "typescript", "title": "TypeScript" },
+        { "id": "php", "title": "PHP" },
+        { "id": "java", "title": "Java" }
+      ]
+    }
+  ],
+  "topics":[
+    {
+      "id": "javascript",
+      "title": "JavaScript"
+    },
+    {
+      "id": "css",
+      "title": "CSS"
+    },
+    {
+      "id": "html",
+      "title": "HTML"
+    },
+    {
+      "id": "kotlin",
+      "title": "Kotlin"
+    },
+    {
+      "id": "nodejs",
+      "title": "NodeJS"
+    },
+    {
+      "id": "react",
+      "title": "React"
+    }
+  ],
+  "questions":[
+    {
+      "id": 1,
+      "topicId": "javascript",
+      "question": "Biến var khác gì với let và const?",
+      "answer": "Biến được khai báo bằng var có phạm vi function scope, trong khi let và const có block scope. Ngoài ra, const không cho phép gán lại giá trị."
+    },
+    {
+      "id": 2,
+      "topicId": "javascript",
+      "question": "Hoisting là gì?",
+      "answer": "Hoisting là cơ chế mà trình thông dịch JavaScript đưa các khai báo biến và hàm lên đầu phạm vi thực thi trước khi chạy code."
+    },
+    {
+      "id": 3,
+      "topicId": "javascript",
+      "question": "Closure là gì?",
+      "answer": "Closure là hàm có thể ghi nhớ và truy cập phạm vi từ bên ngoài kể cả khi hàm đó được gọi ở phạm vi khác."
+    },
+    {
+      "id": 4,
+      "topicId": "javascript",
+      "question": "Promise trong JavaScript là gì?",
+      "answer": "Promise là một đối tượng đại diện cho một tác vụ bất đồng bộ có thể hoàn thành hoặc thất bại trong tương lai."
+    },
+    {
+      "id": 5,
+      "topicId": "javascript",
+      "question": "Sự khác biệt giữa == và === là gì?",
+      "answer": "== so sánh giá trị sau khi chuyển đổi kiểu, còn === so sánh cả giá trị và kiểu dữ liệu (strict equality)."
+    },
+    {
+      "id": 6,
+      "topicId": "nodejs",
+      "question": "Event Loop trong Node.js hoạt động thế nào?",
+      "answer": "Event Loop giúp Node.js xử lý bất đồng bộ bằng cách đẩy các callback vào hàng đợi và thực thi tuần tự khi stack rỗng."
+    },
+    {
+      "id": 7,
+      "topicId": "nodejs",
+      "question": "Module trong Node.js là gì?",
+      "answer": "Module là khối mã độc lập có thể tái sử dụng, được import/export bằng cách sử dụng require hoặc import/export."
+    },
+    {
+      "id": 8,
+      "topicId": "nodejs",
+      "question": "Middleware trong Express là gì?",
+      "answer": "Middleware là hàm có quyền truy cập vào request, response và hàm kế tiếp trong vòng đời xử lý yêu cầu."
+    },
+    {
+      "id": 9,
+      "topicId": "nodejs",
+      "question": "Package.json dùng để làm gì?",
+      "answer": "Package.json chứa thông tin về dự án và quản lý các dependency, script, phiên bản và metadata của dự án Node.js."
+    },
+    {
+      "id": 10,
+      "topicId": "nodejs",
+      "question": "Callback Hell là gì?",
+      "answer": "Callback Hell là tình trạng các hàm callback lồng nhau quá sâu, gây khó khăn trong việc đọc và bảo trì mã."
+    },
+    {
+      "id": 11,
+      "topicId": "react",
+      "question": "React là gì?",
+      "answer": "React là thư viện JavaScript dùng để xây dựng giao diện người dùng dựa trên component."
+    },
+    {
+      "id": 12,
+      "topicId": "react",
+      "question": "Component trong React là gì?",
+      "answer": "Component là các khối nhỏ, tái sử dụng được dùng để xây dựng UI trong React."
+    },
+    {
+      "id": 13,
+      "topicId": "react",
+      "question": "State và Props khác nhau thế nào?",
+      "answer": "State là dữ liệu nội bộ của component, còn Props là dữ liệu được truyền từ component cha xuống."
+    },
+    {
+      "id": 14,
+      "topicId": "react",
+      "question": "useEffect dùng để làm gì?",
+      "answer": "useEffect cho phép bạn xử lý các side effect như gọi API, tương tác DOM hoặc thiết lập subscription."
+    },
+    {
+      "id": 15,
+      "topicId": "react",
+      "question": "Virtual DOM là gì?",
+      "answer": "Virtual DOM là bản sao của DOM thật giúp React cập nhật giao diện hiệu quả bằng cách so sánh và render lại khi có thay đổi."
+    },
+    {
+      "id": 16,
+      "topicId": "html",
+      "question": "Thẻ semantic HTML là gì?",
+      "answer": "Thẻ semantic HTML mô tả rõ ý nghĩa nội dung, ví dụ như <article>, <section>, <nav>, giúp cải thiện SEO và khả năng truy cập."
+    },
+    {
+      "id": 17,
+      "topicId": "html",
+      "question": "Thẻ <form> dùng để làm gì?",
+      "answer": "<form> dùng để thu thập dữ liệu từ người dùng và gửi đến server qua phương thức GET hoặc POST."
+    },
+    {
+      "id": 18,
+      "topicId": "html",
+      "question": "Attribute là gì trong HTML?",
+      "answer": "Attribute là các thuộc tính bổ sung thông tin cho thẻ HTML như id, class, href, src, alt..."
+    },
+    {
+      "id": 19,
+      "topicId": "html",
+      "question": "Khác biệt giữa id và class là gì?",
+      "answer": "id là định danh duy nhất cho một phần tử, còn class có thể được dùng cho nhiều phần tử để áp dụng cùng một style."
+    },
+    {
+      "id": 20,
+      "topicId": "html",
+      "question": "Thẻ <iframe> dùng để làm gì?",
+      "answer": "<iframe> dùng để nhúng một tài liệu HTML khác hoặc trang web vào trong trang hiện tại."
+    },
+    {
+      "id": 21,
+      "topicId": "css",
+      "question": "Box model trong CSS là gì?",
+      "answer": "Box model mô tả cách mỗi phần tử HTML được bao quanh bởi margin, border, padding và content."
+    },
+    {
+      "id": 22,
+      "topicId": "css",
+      "question": "Flexbox là gì?",
+      "answer": "Flexbox là một hệ thống layout một chiều trong CSS giúp căn chỉnh, phân phối không gian giữa các phần tử trong container."
+    },
+    {
+      "id": 23,
+      "topicId": "css",
+      "question": "Sự khác nhau giữa absolute và relative positioning?",
+      "answer": "absolute định vị phần tử theo tổ tiên gần nhất có vị trí khác static, còn relative định vị theo chính vị trí gốc của phần tử."
+    },
+    {
+      "id": 24,
+      "topicId": "css",
+      "question": "Pseudo-class là gì?",
+      "answer": "Pseudo-class là từ khóa thêm vào selector để định kiểu cho trạng thái đặc biệt của phần tử, ví dụ :hover, :focus."
+    },
+    {
+      "id": 25,
+      "topicId": "css",
+      "question": "Z-index trong CSS là gì?",
+      "answer": "Z-index xác định thứ tự chồng lớp của các phần tử, số cao hơn sẽ nằm trên."
+    },
+    {
+      "id": 26,
+      "topicId": "kotlin",
+      "question": "Kotlin là gì?",
+      "answer": "Kotlin là ngôn ngữ lập trình hiện đại, tĩnh, được dùng phổ biến để phát triển ứng dụng Android."
+    },
+    {
+      "id": 27,
+      "topicId": "kotlin",
+      "question": "Null Safety trong Kotlin là gì?",
+      "answer": "Null Safety giúp tránh lỗi NullPointerException bằng cách kiểm tra biến có thể null ngay từ khi khai báo."
+    },
+    {
+      "id": 28,
+      "topicId": "kotlin",
+      "question": "Difference giữa var và val trong Kotlin?",
+      "answer": "var khai báo biến có thể thay đổi, còn val là hằng số không thể gán lại sau khi khởi tạo."
+    },
+    {
+      "id": 29,
+      "topicId": "kotlin",
+      "question": "Extension function trong Kotlin là gì?",
+      "answer": "Extension function cho phép thêm hàm mới vào class hiện có mà không cần kế thừa hay sửa đổi class đó."
+    },
+    {
+      "id": 30,
+      "topicId": "kotlin",
+      "question": "Data class là gì trong Kotlin?",
+      "answer": "Data class là class dùng để chứa dữ liệu với các method như toString(), equals(), hashCode() được tự động tạo ra."
+    }
+  ]  
+}

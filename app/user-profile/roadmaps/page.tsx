@@ -1,51 +1,23 @@
+"use client"
 
 import { Button, Tabs } from 'antd';
 import "./Page.scss";
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { getGroupRoadMap } from '@/services/GroupRoadMapServices';
+import { TypeGroupRoadMap } from '@/lib/definitions';
+
 
 const AllRoadMap = () => {
 
-  const groups = [
-    {
-      "id": "absolute-beginners",
-      "label": "Absolute Beginners",
-      "roadmaps": [
-        { "id": "frontend-beginner", "title": "Frontend Beginner" },
-        { "id": "backend-beginner", "title": "Backend Beginner" },
-        { "id": "devops-beginner", "title": "DevOps Beginner" }
-      ]
-    },
-    {
-      "id": "web-development",
-      "label": "Web Development",
-      "roadmaps": [
-        { "id": "frontend", "title": "Frontend" },
-        { "id": "backend", "title": "Backend" },
-        { "id": "fullstack", "title": "Full Stack" },
-        { "id": "api-design", "title": "API Design" }
-      ]
-    },
-    {
-      "id": "frameworks",
-      "label": "Frameworks",
-      "roadmaps": [
-        { "id": "react", "title": "React" },
-        { "id": "vue", "title": "Vue" },
-        { "id": "angular", "title": "Angular" },
-        { "id": "spring-boot", "title": "Spring Boot" }
-      ]
-    },
-    {
-      "id": "languages-platforms",
-      "label": "Languages / Platforms",
-      "roadmaps": [
-        { "id": "javascript", "title": "JavaScript" },
-        { "id": "typescript", "title": "TypeScript" },
-        { "id": "php", "title": "PHP" },
-        { "id": "java", "title": "Java" }
-      ]
+  const [groups, setGroups] = useState<TypeGroupRoadMap[]>([]);
+  useEffect(() => {
+    const fetchApi = async () => {
+      const response = await getGroupRoadMap();
+      setGroups(response);
     }
-  ]
+    fetchApi();
+  }, []);
 
   return (
     <>
@@ -103,7 +75,6 @@ const AllRoadMap = () => {
         />
       </div>
       {/* End All Roadmaps  */}
-
     </>
   )
 }

@@ -1,38 +1,25 @@
-import { Card, Col, Row } from 'antd';
+"use client"
+
 import Link from 'next/link';
 import "./Page.scss"
+import { useEffect, useState } from 'react';
+import { TypeTopic } from '@/lib/definitions';
+import { getListTopic } from '@/services/topicServices';
 
 const Question = () => {
-  const topics = [
-    {
-      id: "javascript",
-      title: "JavaScript"
-    },
-    {
-      id: "css",
-      title: "CSS"
-    },
-    {
-      id: "html",
-      title: "HTML"
-    },
-    {
-      id: "kotlin",
-      title: "Kotlin"
-    },
-    {
-      id: "nodejs",
-      title: "NodeJS"
-    },
-    {
-      id: "react",
-      title: "React"
+
+  const [topics, setTopics] = useState<TypeTopic[]>([]);
+  useEffect(() => {
+    const fetchApi = async () => {
+      const response = await getListTopic();
+      setTopics(response);
     }
-  ]
+    fetchApi();
+  }, []);
 
   return (
     <>
-      <section className='question'>
+      <div className='question'>
         {/* Header  */}
         <div className='max-w-6xl mx-auto px-4 py-8'>
           <h1 className="text-5xl font-bold mb-2">Questions</h1>
@@ -46,7 +33,7 @@ const Question = () => {
         <div className="bg-gray-100">
           <div className="max-w-6xl mx-auto px-4 py-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {topics.map(topic => (
+              {topics && topics.map(topic => (
                 <Link
                   href={`questions/${topic.id}`}
                   key={topic.id}
@@ -58,7 +45,7 @@ const Question = () => {
           </div>
         </div>
         {/* End Body  */}
-      </section>
+      </div>
     </>
   )
 }
