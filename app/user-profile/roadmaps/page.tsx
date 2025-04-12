@@ -2,7 +2,8 @@
 import { Button, Tabs } from 'antd';
 import "./Page.scss";
 import Link from 'next/link';
-const Test = () => {
+
+const AllRoadMap = () => {
 
   const groups = [
     {
@@ -106,4 +107,4 @@ const Test = () => {
     </>
   )
 }
-export default Test;
+export default AllRoadMap;
