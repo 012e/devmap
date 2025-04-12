@@ -1,0 +1,68 @@
+.developer-roadmap{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+
+  &__title{
+    font-size: 45px;
+    font-weight: 700;
+  }
+  &__desc{
+    font-size: 20px;
+  }
+  &__tool{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    &--draw{
+      background-color: #000;
+      color: #fff;
+      font-size: 20px;;
+      padding: 20px 10px;
+    }
+    &--ai{
+      background-color: #D1D5DC;
+      color: #000;
+      font-size: 20px;
+      padding: 20px 10px;
+    }
+  }
+}
+
+.all-roadmaps{
+  display: flex;
+  justify-content: center;
+  background-color: #F3F4F6;
+  padding: 20px 0;
+}
+
+.tab-content{
+  &__title{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  &__body{
+    &--item{
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.ant-tabs-content-holder {
+  flex: 1;
+  min-height: 500px; 
+  max-height: 600px;
+  overflow-y: auto;
+}
+.ant-tabs {
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  display: flex;
+}
